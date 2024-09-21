@@ -1,0 +1,76 @@
+.single-gallery {
+    margin-bottom: 30px;
+  }
+  
+  .single-gallery .content {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  
+  .primary-btn {
+    border-radius: 5px !important;
+    background-color: #C6B069;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .primary-btn:hover {
+    background-color: #AFA06D; /* Darken on hover */
+  }
+  
+  .single-gallery .content .content-overlay {
+    background-color: rgba(55, 54, 66, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    border-radius: 15px;
+    border: 1px solid #C6B069;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .single-gallery .content:hover .content-overlay {
+    opacity: 0.8; /* Adjust opacity on hover */
+  }
+  h3{
+    border-bottom: 1px solid white;
+    width: 60%;
+   
+  }
+  .single-gallery .content-details {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .single-gallery .content:hover .content-details {
+    opacity: 1;
+  }
+  
+  .single-gallery .content-image {
+    width: 100%;
+    border-radius: 15px; /* Ensure images have the same rounded corners */
+  }
+  
+  /* Media Queries */
+  @media (max-width: 414px) {
+    .single-gallery .content-title {
+      font-size: 15px; /* Ensure the font is readable on smaller screens */
+    }
+  }
+  
