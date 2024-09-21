@@ -8,7 +8,7 @@ Licence: <a href="https://www.templateonweb.com/license">Website Template Licenc
 
 /*********************about****************/
 .center_about {
-background-image: url(../img/);
+background-image: url(../img/hero/hero2.jpg);
 background-position: center;
 }
 .overview_r {
@@ -49,7 +49,7 @@ border-radius: 0;
 }
 
 .center_team {
-background-image: url(../img/41.jpg);
+background-image: url("assets/img/alldesings/18.jpeg");
 background-position: center;
 }
 /*********************about_end****************/
