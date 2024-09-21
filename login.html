@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" >
+	<link href="./assets/css/font-awesome.min.css" rel="stylesheet" >
+	<link href="./assets/css/global.css" rel="stylesheet">
+	<link href="./assets/css/index.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<style>
+	
+	.navbar .btn {
+  border-radius: 25px; /* Rounded buttons */
+  padding: 8px 15px;   /* Adjust padding */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.navbar .btn:hover {
+  background-color: #007bff; /* Change background on hover */
+  color: white;               /* Change text color on hover */
+}
+
+.navbar .btn-outline-primary {
+  color: #007bff;             /* Primary text color */
+}
+
+.navbar .btn-outline-primary:hover {
+  background-color: #007bff;  /* Background on hover */
+  color: white;                /* Text color on hover */
+}
+
+  
+</style>
+</head>
+<body>
+    <section id="header" class="bg-light">
+		<nav class="navbar navbar-expand-md navbar-light bg-white mx-auto" id="navbar_sticky">
+		  <div class="container-xl">
+			<a class="text-black p-0 navbar-brand fw-bold" href="index.html">
+			  <i class="fa fa-home col_red fs-1 align-middle"></i> Crystal <br>
+			  <span class="text-muted fw-normal font_14">Interior Designer</span>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav mb-0 ms-auto">
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="about.html">About</a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+				  <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="blog.html">Blog</a></li>
+					<li><a class="dropdown-item border-0" href="blog_detail.html">Blog Detail</a></li>
+				  </ul>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="services.html">Services</a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+				  <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="project.html">Projects</a></li>
+					<li><a class="dropdown-item border-0" href="project_detail.html">Project Detail</a></li>
+				  </ul>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+				  <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="team.html">Team</a></li>
+					<li><a class="dropdown-item border-0" href="contact.html">Contact</a></li>
+				  </ul>
+				</li>
+				<li class="nav-item"  style="margin-top: 15px;">
+				  <a class="btn btn-outline-primary me-2" href="login.html">
+					<i class="fa fa-sign-in-alt me-1"></i> Login
+				  </a>
+				</li>
+				<li class="nav-item"  style="margin-top: 15px;">
+				  <a class="btn btn-primary" href="register.html">
+					<i class="fa fa-user-plus me-1"></i> Register
+				  </a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle dropdown_search nav_hide" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<i class="fa fa-search"></i>
+				  </a>
+				  <ul class="dropdown-menu drop_2 p-3" aria-labelledby="navbarDropdown">
+					<li>
+					  <div class="input-group">
+						<input type="text" class="form-control" placeholder="Search Here">
+						<span class="input-group-btn">
+						  <button class="btn btn-primary bg_red rounded-0 p-2 px-3 border-0" type="button">
+							<i class="fa fa-search"></i>
+						  </button>
+						</span>
+					  </div>
+					</li>
+				  </ul>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" aria-current="page" href="#"><i class="fa fa-user"></i></a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+	  </section>
+
+      <section id="login" class="p_3">
+        <div class="container-xl">
+          <div class="row work_h1 text-center mb-4">
+            <div class="col-md-12">
+              <h6 class="col_red fw-bold">LOGIN</h6>
+              <h2>ACCESS YOUR <span class="fw-normal">ACCOUNT</span></h2>
+            </div>
+          </div>
+          <div class="row border_1 p-4 px-2 w-75 mx-auto">
+            <div class="col-md-12 mb-3">
+              <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="col-md-12 mb-3">
+              <input type="password" class="form-control" placeholder="Password" required>
+            </div>
+            <div class="col-md-12 mb-3 text-end">
+              <a href="designerLogin.html" class="text-primary">Are you a designer? Login here</a>
+            </div>
+            <div class="col-md-12">
+              <button class="btn btn-primary w-100">Login</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+</body>
+</html>
