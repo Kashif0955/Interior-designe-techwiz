@@ -11,88 +11,125 @@
 	<link href="./assets/css/index.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 	<script src="./assets/js/bootstrap.bundle.min.js"></script>
-
+	<style>
+	
+		.navbar .btn {
+	  border-radius: 25px; /* Rounded buttons */
+	  padding: 8px 15px;   /* Adjust padding */
+	  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+	}
+	
+	.navbar .btn:hover {
+	  background-color: #007bff; /* Change background on hover */
+	  color: white;               /* Change text color on hover */
+	}
+	
+	.navbar .btn-outline-primary {
+	  color: #007bff;             /* Primary text color */
+	}
+	
+	.navbar .btn-outline-primary:hover {
+	  background-color: #007bff;  /* Background on hover */
+	  color: white;                /* Text color on hover */
+	}
+	
+	
+	
+	
+	
+	
+	  
+	</style>
 </head>
 <body>
-<section id="header" class="bg-light">
-<nav class="navbar navbar-expand-md navbar-light bg-white mx-auto" id="navbar_sticky">
-  <div class="container-xl">
-    <a class="text-black p-0 navbar-brand fw-bold" href="index.html"><i class="fa fa-home col_red fs-1 align-middle"></i> Crystal <br> <span class="text-muted fw-normal font_14">Interior Designer</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	   <ul class="navbar-nav mb-0 ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.html">Home</a>
-        </li>
-		 
-		<li class="nav-item">
-          <a class="nav-link" href="about.html">About </a>
-        </li>
-		
-		<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Blog
-          </a>
-          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
-            <li><a class="dropdown-item border-0" href="blog_detail.html"> Blog Detail</a></li>
-          </ul>
-        </li>
-		
-		<li class="nav-item">
-          <a class="nav-link" href="services.html">Services </a>
-        </li>
-				
-		<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Projects
-          </a>
-          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="project.html"> Projects</a></li>
-            <li><a class="dropdown-item border-0" href="project_detail.html"> Project Detail</a></li>
-          </ul>
-        </li>
-		
-		
-		<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Pages
-          </a>
-          <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="team.html"> Team</a></li>
-            <li><a class="dropdown-item border-0" href="contact.html"> Contact</a></li>
-          </ul>
-        </li>
-		
-		 <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle dropdown_search nav_hide" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa fa-search"></i>
-          </a>
-          <ul class="dropdown-menu drop_2 p-3" aria-labelledby="navbarDropdown">
-            <li>
-			  <div class="input-group">
-				<input type="text" class="form-control" placeholder="Search Here">
-				<span class="input-group-btn">
-					<button class="btn btn-primary bg_red rounded-0 p-2 px-3 border-0" type="button">
-						<i class="fa fa-search"></i> </button>
-				</span>
-		</div>
-			</li>
-          </ul>
-        </li>
-	   
-		<li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#"><i class="fa fa-user"></i></a>
-        </li>
-				
-      </ul>
-      
-    </div>
-  </div>
-</nav>
-</section>
+	<section id="header" class="bg-light">
+		<nav class="navbar navbar-expand-md navbar-light bg-white mx-auto" id="navbar_sticky">
+			<div class="container-xl">
+				<a class="text-black p-0 navbar-brand fw-bold" href="index.html">
+					<i class="fa fa-home col_red fs-1 align-middle"></i> Mk <br>
+					<span class="text-muted fw-normal font_14">Interior Designer</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mb-0 ms-auto">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+							<ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="blog.html">Blog</a></li>
+								<li><a class="dropdown-item border-0" href="blog_detail.html">Blog Detail</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="services.html">Services</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+							<ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="project.html">Projects</a></li>
+								<li><a class="dropdown-item border-0" href="project_detail.html">Project Detail</a></li>
+							</ul>
+						</li>
+						<!-- New "Team" Link -->
+						<li class="nav-item">
+							<a class="nav-link" href="team.html">Team</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+							<ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="contact.html">Contact</a></li>
+							</ul>
+						</li>
+						<li class="nav-item" style="margin-top: 15px;">
+							<a class="btn btn-outline-primary me-2" href="login.html">
+								<i class="fa fa-sign-in-alt me-1"></i> Login
+							</a>
+						</li>
+						<li class="nav-item" style="margin-top: 15px;">
+							<a class="btn btn-primary" href="register.html">
+								<i class="fa fa-user-plus me-1"></i> Register
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle dropdown_search nav_hide" href="#" id="navbarDropdown"
+								role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="fa fa-search"></i>
+							</a>
+							<ul class="dropdown-menu drop_2 p-3" aria-labelledby="navbarDropdown">
+								<li>
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Search Here">
+										<span class="input-group-btn">
+											<button class="btn btn-primary bg_red rounded-0 p-2 px-3 border-0"
+												type="button">
+												<i class="fa fa-search"></i>
+											</button>
+										</span>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#"><i class="fa fa-user"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</section>
+	
 
 <section id="header_m" class="p_3 bg-light">
  <div class="container-xl">
@@ -357,128 +394,155 @@
 
 <section id="footer" class="p_3 bg_dark">
 	<div class="container-xl">
-	   <div class="row footer_1">
-		<div class="col-md-3">
-		 <div class="footer_1i">
-		   <h3 class="mb-4"><a class="text-white fw-bold" href="index.html"><i class="fa fa-home col_red fs-1 align-middle"></i> Crystal <br> <span class="text-white-50 fw-normal font_14">Interior Designer</span></a></h3>
-		   <h5 class="text-white fs-6">ADDRESS</h5>
-		   <hr class="line">
-		   <p class="text-white-50 fs-6">Flat 24, Semper Amet, East<br>
-   Lorem, GW79 6XT</p>
-   <h5 class="text-white fs-6">PHONE</h5>
-		   <hr class="line">
-		   <p class="text-white-50 fs-6">+(000) 345 67 89<br>
-   Mon - Friday: 9.00am to 6.00pm</p>
-   <h5 class="text-white fs-6">EMAIL</h5>
-		   <hr class="line">
-		   <p class="text-white-50 fs-6">info@gmail.com<br>
-   info@gmail.com</p>
-		 </div>
+		<div class="row footer_1">
+			<div class="col-md-3">
+				<div class="footer_1i">
+					<h3 class="mb-4"><a class="text-white fw-bold" href="index.html"><i
+								class="fa fa-home col_red fs-1 align-middle"></i> Crystal <br> <span
+								class="text-white-50 fw-normal font_14">Interior
+								Designer</span></a></h3>
+					<h5 class="text-white fs-6">ADDRESS</h5>
+					<hr class="line">
+					<p class="text-white-50 fs-6">Flat 24, Semper Amet, East<br>
+						Lorem, GW79 6XT</p>
+					<h5 class="text-white fs-6">PHONE</h5>
+					<hr class="line">
+					<p class="text-white-50 fs-6">+(000) 345 67 89<br>
+						Mon - Friday: 9.00am to 6.00pm</p>
+					<h5 class="text-white fs-6">EMAIL</h5>
+					<hr class="line">
+					<p class="text-white-50 fs-6">mk.interiors@gmail.com<br>
+						mk@gmail.com</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer_1i">
+					<h4 class="text-white fs-3 mb-5">Services</h4>
+					<hr class="hr_1 mb-4">
+					<div class="row footer_3ism">
+						<h6 class="col-md-12 col-6"><a class="text-white-50" href="#"><i
+									class="fa fa-chevron-right me-1 font_12 col_red"></i> Concept
+								Design</a></h6>
+						<h6 class="col-md-12 col-6 mt-3"><a class="text-white-50" href="#"><i
+									class="fa fa-chevron-right me-1 font_12 col_red"></i> Project
+								Designs</a></h6>
+						<h6 class="col-md-12 col-6 mt-3"><a class="text-white-50" href="#"><i
+									class="fa fa-chevron-right me-1 font_12 col_red"></i> Make
+								Overs</a></h6>
+						<h6 class="col-md-12 col-6 mt-3"><a class="text-white-50" href="#"><i
+									class="fa fa-chevron-right me-1 font_12 col_red"></i>
+								Consulting</a></h6>
+						<h6 class="col-md-12 col-6 mt-3"><a class="text-white-50" href="#"><i
+									class="fa fa-chevron-right me-1 font_12 col_red"></i> Glass &
+								Wrought</a></h6>
+						<h6 class="col-md-12 col-6 mt-3 mb-0"><a class="text-white-50"
+								href="#"><i class="fa fa-chevron-right me-1 font_12 col_red"></i>
+								Space Planning</a></h6>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer_1i">
+					<h4 class="text-white fs-3 mb-5">Recent News</h4>
+					<hr class="hr_1 mb-4">
+					<div class="row footer_1i1">
+						<div class="col-md-4 col-4 pe-0">
+							<div class="footer_1i1l">
+								<figure class="effect-jazz mb-0">
+									<a href="#"><img src="./assets/img/new-images/img-7.jpeg"
+											class="w-100" alt="abc"></a>
+								</figure>
+							</div>
+						</div>
+						<div class="col-md-8 col-8">
+							<div class="footer_1i1r">
+								<h6 class="text-white-50"><i class="fa fa-calendar col_red me-1"></i>
+									June 7, 2018</h6>
+								<h6 class="fw-bold mb-0"><a class="text-white" href="#">Creating drama
+										and
+										feeling with…</a></h6>
+							</div>
+						</div>
+					</div><hr class="hr_1">
+					<div class="row footer_1i1">
+						<div class="col-md-4 col-4 pe-0">
+							<div class="footer_1i1l">
+								<figure class="effect-jazz mb-0">
+									<a href="#"><img src="./assets/img/new-images/img-8.jpeg"
+											class="w-100" alt="abc"></a>
+								</figure>
+							</div>
+						</div>
+						<div class="col-md-8 col-8">
+							<div class="footer_1i1r">
+								<h6 class="text-white-50"><i class="fa fa-calendar col_red me-1"></i>
+									June 7, 2018</h6>
+								<h6 class="fw-bold mb-0"><a class="text-white" href="#">Enjoy monsoon
+										in
+										comfort of your…</a></h6>
+							</div>
+						</div>
+					</div><hr class="hr_1">
+					<div class="row footer_1i1">
+						<div class="col-md-4 col-4 pe-0">
+							<div class="footer_1i1l">
+								<figure class="effect-jazz mb-0">
+									<a href="#"><img src="./assets/img/new-images/img-9.webp"
+											class="w-100" alt="abc"></a>
+								</figure>
+							</div>
+						</div>
+						<div class="col-md-8 col-8">
+							<div class="footer_1i1r">
+								<h6 class="text-white-50"><i class="fa fa-calendar col_red me-1"></i>
+									June 7, 2018</h6>
+								<h6 class="fw-bold mb-0"><a class="text-white" href="#">Wondering if
+										interior
+										design is dying…</a></h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer_1i">
+					<h4 class="text-white fs-3 mb-5">Our NewsLetter</h4>
+					<hr class="hr_1 mb-4">
+					<p class="text-white-50">Get in your inbox the latest News and Offers
+						from Greenly</p>
+					<input class="form-control rounded-3 text-light bg-transparent"
+						placeholder="Email here" type="text">
+					<h6 class="mb-0 mt-3"><a class="button d-block text-center"
+							href="#">Subscribe</a></h6>
+				</div>
+			</div>
 		</div>
-		<div class="col-md-3">
-		 <div class="footer_1i">
-		   <h4 class="text-white fs-3 mb-5">Services</h4>
-		   <hr class="hr_1 mb-4">
-		   <div class="row footer_3ism">
-			   <h6 class="col-md-12 col-6"><a class="text-white-50" href="#"><i class="fa fa-chevron-right me-1 font_12 col_red"></i> Concept Design</a></h6>
-			   <h6 class="col-md-12 col-6 mt-3"><a class="text-white-50" href="#"><i class="fa fa-chevron-right me-1 font_12 col_red"></i> Project Designs</a></h6>
-			   <h6 class="col-md-12 col-6 mt-3"><a class="text-white-50" href="#"><i class="fa fa-chevron-right me-1 font_12 col_red"></i> Make Overs</a></h6>
-			   <h6 class="col-md-12 col-6 mt-3"><a class="text-white-50" href="#"><i class="fa fa-chevron-right me-1 font_12 col_red"></i> Consulting</a></h6>
-			   <h6 class="col-md-12 col-6 mt-3"><a class="text-white-50" href="#"><i class="fa fa-chevron-right me-1 font_12 col_red"></i> Glass & Wrought</a></h6>
-			   <h6 class="col-md-12 col-6 mt-3 mb-0"><a class="text-white-50" href="#"><i class="fa fa-chevron-right me-1 font_12 col_red"></i> Space Planning</a></h6>
-		   </div>
-		 </div>
-		</div>
-		<div class="col-md-3">
-		 <div class="footer_1i">
-		   <h4 class="text-white fs-3 mb-5">Recent News</h4>
-		   <hr class="hr_1 mb-4">
-		   <div class="row footer_1i1">
-				<div class="col-md-4 col-4 pe-0">
-				 <div class="footer_1i1l">
-				   <figure class="effect-jazz mb-0">
-					   <a href="#"><img src="./assets/img/new-images/img-7.jpeg" class="w-100" alt="abc"></a>
-					 </figure>
-				 </div>
-				</div>
-				<div class="col-md-8 col-8">
-				 <div class="footer_1i1r">
-				  <h6 class="text-white-50"><i class="fa fa-calendar col_red me-1"></i> June 7, 2018</h6>
-				  <h6 class="fw-bold mb-0"><a class="text-white" href="#">Creating drama and
-   feeling with…</a></h6>
-				 </div>
-				</div>
-		   </div><hr class="hr_1">
-		   <div class="row footer_1i1">
-				<div class="col-md-4 col-4 pe-0">
-				 <div class="footer_1i1l">
-				   <figure class="effect-jazz mb-0">
-					   <a href="#"><img src="./assets/img/new-images/img-8.jpeg" class="w-100" alt="abc"></a>
-					 </figure>
-				 </div>
-				</div>
-				<div class="col-md-8 col-8">
-				 <div class="footer_1i1r">
-				  <h6 class="text-white-50"><i class="fa fa-calendar col_red me-1"></i> June 7, 2018</h6>
-				  <h6 class="fw-bold mb-0"><a class="text-white" href="#">Enjoy monsoon in
-   comfort of your…</a></h6>
-				 </div>
-				</div>
-		   </div><hr class="hr_1">
-		   <div class="row footer_1i1">
-				<div class="col-md-4 col-4 pe-0">
-				 <div class="footer_1i1l">
-				   <figure class="effect-jazz mb-0">
-					   <a href="#"><img src="./assets/img/new-images/img-9.webp" class="w-100" alt="abc"></a>
-					 </figure>
-				 </div>
-				</div>
-				<div class="col-md-8 col-8">
-				 <div class="footer_1i1r">
-				  <h6 class="text-white-50"><i class="fa fa-calendar col_red me-1"></i> June 7, 2018</h6>
-				  <h6 class="fw-bold mb-0"><a class="text-white" href="#">Wondering if interior
-   design is dying…</a></h6>
-				 </div>
-				</div>
-		   </div>
-		 </div>
-		</div>
-		<div class="col-md-3">
-		 <div class="footer_1i">
-		   <h4 class="text-white fs-3 mb-5">Our NewsLetter</h4>
-		   <hr class="hr_1 mb-4">
-			<p class="text-white-50">Get in your inbox the latest News and Offers from Greenly</p>
-			<input class="form-control rounded-3 text-light bg-transparent" placeholder="Email here" type="text">
-			<h6 class="mb-0 mt-3"><a class="button d-block text-center" href="#">Subscribe</a></h6>
-		 </div>
-		</div>
-	   </div>
 	</div>
-   </section>
-
-<section id="footer_b" class="pt-3 pb-3">
- <div class="container-xl">
-  <div class="row footer_b1">
-     <div class="col-md-8">
-	  <div class="footer_b1l">
-	   <p class="mb-0">© 2013 Your Website Name. All Rights Reserved | Design by <a class="col_red" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
-	  </div>
-	 </div>
-	 <div class="col-md-4">
-	  <div class="footer_b1r text-end mt-1">
-	   <h6 class="mb-0">
-	Follow Us On 
-	<a class="mx-2  font_14" href="#"><i class="fa fa-facebook"></i></a>
-	<a class="mx-2  font_14" href="#"><i class="fa fa-twitter"></i></a>
-	<a class="mx-2  font_14" href="#"><i class="fa fa-linkedin"></i></a>
-	<a class="mx-2  font_14" href="#"><i class="fa fa-instagram"></i></a>
-	</h6>
-	  </div>
-	 </div>
-  </div>
- </div>
 </section>
 
+<section id="footer_b" class="pt-3 pb-3">
+	<div class="container-xl">
+		<div class="row footer_b1">
+			<div class="col-md-8">
+				<div class="footer_b1l">
+					<p class="mb-0">© 2013 Your Website Name. All Rights Reserved mk-interiors
+					
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="footer_b1r text-end mt-1">
+					<h6 class="mb-0">
+						Follow Us On
+						<a class="mx-2  font_14" href="#"><i class="fa fa-facebook"></i></a>
+						<a class="mx-2  font_14" href="#"><i class="fa fa-twitter"></i></a>
+						<a class="mx-2  font_14" href="#"><i class="fa fa-linkedin"></i></a>
+						<a class="mx-2  font_14" href="#"><i class="fa fa-instagram"></i></a>
+					</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 <script>
 window.onscroll = function() {myFunction()};
