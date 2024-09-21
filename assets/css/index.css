@@ -56,7 +56,11 @@ font-size:70px;
  }
 /*********************about_h_end****************/
 
-
+.rounded-circle{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+}
 /*********************connect****************/
 #connect{
 background-image: url(../img/2.jpg);
